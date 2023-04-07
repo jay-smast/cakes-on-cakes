@@ -1,0 +1,373 @@
+/* ref:  fonts: josefin sans, cardo // colors: blue - #2424dd pink - #fcbecf red - #e11414 maroon - #910F0f*/
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+
+}
+header img{
+    width: 180px;
+    height: auto;
+    position: absolute;
+    padding: 10px;
+}
+.logo-head{
+    background-color: #fcbecf;
+    padding: .1px;
+    margin: -10px -10px 0 200px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-bottom-left-radius: 75px;
+}
+.logo-head h1{
+    font-family: 'Cardo', serif;
+    color: #e11414;
+    padding-left: 50px;
+    font-size: 68px;
+    
+
+}
+
+
+/* CLEAR NAV WITH BUBBLE HOVER */
+
+.sticky-nav {
+    position: fixed;
+    
+   
+    
+    top:0;
+    right: 0;
+    z-index: 100;
+    
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  
+  /* Style the navigation links */
+  .sticky-nav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  .sticky-nav nav ul li {
+    float: left;
+    
+  }
+  
+  .sticky-nav nav ul li a {
+    
+    display: block;
+    padding: 20px 15px;
+    font-weight: 400;
+    color: #e11414;
+    text-align: center;
+    text-decoration: none;
+    
+
+  }
+  /* bubble out on hover */
+ 
+  .sticky-nav nav ul li a:hover {
+    background-color: #fcbecf;
+    
+    width: 90px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position: relative;
+    transition: .4s ease-in-out;
+  }
+
+  
+/* STICKY PINK BUBBLE NAV WITH TABS */
+/* .sticky-nav {
+    position: sticky;
+    margin-top: -10px;
+    margin-right: -10px;
+    float: right;
+    top:0;
+    z-index: 100;
+    background-color: #fcbecf;
+    width: 900px;
+    height: 60px;
+   
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  } */
+  
+  /* Style the navigation links */
+  /* .sticky-nav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  .sticky-nav nav ul li {
+    float: right;
+    
+  }
+  
+  .sticky-nav nav ul li a {
+    
+    display: block;
+    padding: 20px 15px;
+   
+    color: #e11414;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .sticky-nav nav ul li a:hover {
+    background-color: white;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+   
+  } */
+
+  
+
+/* Style the carousel container */
+/* .carousel {
+   
+  } */
+  
+  /* Style the carousel slides container */
+  .carousel-slides {
+   
+  
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 25px;
+
+   
+  }
+  
+  /* Style individual carousel slides */
+  .slide {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    flex-shrink: 0;
+   position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: fade;
+    animation-duration: 1s;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  
+  }
+  
+  .slide-text {
+    background-color: #fcbecf;
+    bottom: 0;
+    padding: 40px;
+    border-top-right-radius: 50%;
+    
+    position: absolute;
+    color: black;
+    
+  }
+  
+  .slide-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .slide-text p {
+    font-size: 18px;
+  }
+  
+  /* Style the carousel navigation buttons */
+
+
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: #fcbecf;
+    opacity: .60;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 30%;
+    user-select: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .next {
+    right: 10%;
+  
+  }
+  .prev {
+    left: 10%;
+  
+  }
+  .prev:hover, .next:hover {
+    background-color:#bbb;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 1px 2px;
+    background-color: #e11414;
+    opacity: .50;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  }
+  .active, .dot:hover {
+    background-color: #e11414;
+    opacity: 1;
+  }
+  
+/* Fading animation */
+
+@keyframes fade {
+    from {
+      opacity: .5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+.story-container {
+    display: flex;
+    width: 800px;
+    height: 300px;
+    margin: 10px 0 100px -10px;
+    background-color: #fcbecf;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.story-text{
+   margin: 50px;
+}
+
+
+/* Pricing */
+.Arch{
+    position: relative;
+    
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 1000px;
+    border-radius: 500px 500px 0 0;
+    background-color: #fcbecf;
+}
+.arch-logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    padding-top: 25px;
+}
+.pink-frame{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-top: 420px;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: auto;
+    background-color: #fcbecf;
+
+}
+.pricing-guide{
+    padding: 25px 50px;
+}
+table {
+    margin: 50px;
+} 
+
+
+/* Style the retro footer */
+.footer {
+    background-color: #fcbecf;
+    padding: 40px;
+    margin-left: 350px;
+    border-top-left-radius: 200px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    
+  }
+  .footer img{
+    padding: 20px;
+    width: 200px;
+    
+  }
+  
+  .footer h2 {
+    margin-bottom: 20px;
+    
+  }
+  .social-media-links{
+    margin: 0 25px;
+  }
+  .contact-links ul,
+  .social-media-links ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-links li,
+  .social-media-links li {
+    margin-bottom: 10px;
+    
+  }
+  
+  .contact-links a,
+  .social-media-links a {
+    text-decoration: none;
+    
+    
+  }
+  
+  .social-media-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 15%;
+    
+    
+  }
+  
+  /* Add retro-style icons */
+  .social-media-links img {
+    
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .social-media-links img:hover {
+    background-color: #2424dd;
+  }
