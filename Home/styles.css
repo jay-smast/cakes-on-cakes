@@ -1,45 +1,51 @@
 /* ref:  fonts: josefin sans, cardo // colors: blue - #2424dd pink - #fcbecf red - #e11414 maroon - #910F0f*/
+@font-face {
+  font-family: Theramy;
+  src: url(/Theramy\ Regular.ttf);
+}
 * {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 
 }
-header img{
-    width: 180px;
-    height: auto;
-    position: absolute;
-    padding: 10px;
+header {
+  margin: 30px 25px 25px;
 }
-.logo-head{
-    background-color: #fcbecf;
-    padding: .1px;
-    margin: -10px -10px 0 200px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-bottom-left-radius: 75px;
+h1 {
+  display: inline-block;
+  font-family: Theramy, serif;
+  color: #e11414;
+  margin: 0 25px 0 0;
+  font-size: 52px;
 }
-.logo-head h1{
-    font-family: 'Cardo', serif;
-    color: #e11414;
-    padding-left: 50px;
-    font-size: 68px;
+.social-icons{
+  float: right;
+  margin-top: 5px;
+  
+}
+.social-icons img{
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #fcbecf;
+  width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 15%;
     
-
+}
+.social-icons img:hover{
+  background-color:#e11414;
+  
+  cursor: pointer;
 }
 
 
 /* CLEAR NAV WITH BUBBLE HOVER */
 
 .sticky-nav {
-    position: fixed;
-    
-   
-    
-    top:0;
-    right: 0;
-    z-index: 100;
-    
-    border-bottom-left-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: inline-block;
+  margin-left: 50px;
+
   }
   
   /* Style the navigation links */
@@ -47,87 +53,36 @@ header img{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+   text-align: center;
     
   }
   
   .sticky-nav nav ul li {
     float: left;
-    
+   padding: 0 6px;
   }
   
   .sticky-nav nav ul li a {
-    
     display: block;
-    padding: 20px 15px;
+    padding: 0 10px;
     font-weight: 400;
     color: #e11414;
     text-align: center;
     text-decoration: none;
     
-
-  }
-  /* bubble out on hover */
- 
-  .sticky-nav nav ul li a:hover {
-    background-color: #fcbecf;
-    
-    width: 90px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    position: relative;
-    transition: .4s ease-in-out;
-  }
-
-  
-/* STICKY PINK BUBBLE NAV WITH TABS */
-/* .sticky-nav {
-    position: sticky;
-    margin-top: -10px;
-    margin-right: -10px;
-    float: right;
-    top:0;
-    z-index: 100;
-    background-color: #fcbecf;
-    width: 900px;
-    height: 60px;
-   
-    border-bottom-left-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  } */
-  
-  /* Style the navigation links */
-  /* .sticky-nav nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-  }
-  
-  .sticky-nav nav ul li {
-    float: right;
-    
-  }
-  
-  .sticky-nav nav ul li a {
-    
-    display: block;
-    padding: 20px 15px;
-   
-    color: #e11414;
-    text-align: center;
-    text-decoration: none;
   }
   
   .sticky-nav nav ul li a:hover {
-    background-color: white;
-    border-bottom-right-radius: 40%;
-    border-bottom-left-radius: 40%;
+    font-weight:600;
+    border-bottom: 1px solid #fcbecf;
    
-  } */
-
+  }
   
+  .sticky-nav nav ul li a.active-link {
+    font-weight:600;
+    border-bottom: 1px solid #fcbecf;
+  }
+
 
 /* Style the carousel container */
 /* .carousel {
@@ -149,7 +104,7 @@ header img{
   
   /* Style individual carousel slides */
   .slide {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+   
     flex-shrink: 0;
    position: relative;
     width: 100%;
@@ -183,7 +138,8 @@ header img{
     
   }
   
-  .slide-text h1 {
+  .slide-text h2 {
+   
     font-size: 36px;
     margin-bottom: 10px;
   }
@@ -211,7 +167,7 @@ header img{
     transition: 0.6s ease;
     border-radius: 30%;
     user-select: none;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
   }
   .next {
     right: 10%;
@@ -261,35 +217,56 @@ header img{
     background-color: #fcbecf;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  
 }
 
 .story-text{
    margin: 50px;
 }
 
-
-/* Pricing */
-.Arch{
-    position: relative;
-    
-    left: 50%;
-    top: 300px;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    width: 1000px;
+.about-container {
+  width: 1000px;
+  height: auto;
+  margin: 25px auto;
+  background-color: #fcbecf;
+}
+.about-one {
+  padding: 50px;
+  display: flex;
+}
+.about-one img {
+  width: 400px;
+  height: auto;
+  margin: 5px;
+}
+.about-two {
+  padding: 50px;
+  display: flex;
+}
+.about-two img {
+  width: 400px;
+  height: auto;
+  margin: 5px;
+}
+/* footer arch */
+/* .Arch{
+    margin: auto;
+   
+    height: 200px;
+    width: 600px;
     border-radius: 500px 500px 0 0;
     background-color: #fcbecf;
+    margin-bottom: 20px;
 }
 .arch-logo img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 200px;
     height: auto;
-    padding-top: 25px;
-}
-.pink-frame{
+    
+} */
+/* .pink-frame{
     position: relative;
     left: 50%;
     top: 50%;
@@ -305,54 +282,52 @@ header img{
 }
 table {
     margin: 50px;
-} 
+}  */
 
 
 /* Style the retro footer */
-.footer {
+.footer-info {
     background-color: #fcbecf;
-    padding: 40px;
-    margin-left: 350px;
-    border-top-left-radius: 200px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    align-items: center;
+    width: 800px;
+    margin: 5px auto;
     display: flex;
     
   }
-  .footer img{
-    padding: 20px;
-    width: 200px;
-    
-  }
+  
   
   .footer h2 {
-    margin-bottom: 20px;
-    
-  }
-  .social-media-links{
-    margin: 0 25px;
-  }
-  .contact-links ul,
-  .social-media-links ul {
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    color: #e11414;
+    font-family: 'Cardo', sans-serif;
+    font-size: 42px;
+    margin-top: 0px;
   }
   
-  .contact-links li,
-  .social-media-links li {
-    margin-bottom: 10px;
+  .contact-links ul {
+    list-style-type: none;
     
   }
+ .social-media-links {
+  margin-left: 100px;
+ }
+  .social-media-links ul {
+    display: flex;
+    list-style-type: none;
+    
+  }
+  
+  
   
   .contact-links a,
   .social-media-links a {
-    text-decoration: none;
     
+    text-decoration: none;
+    color: black;
     
   }
   
   .social-media-links img {
+    
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -361,6 +336,10 @@ table {
     
     
   }
+ footer p{
+  
+  text-align: center;
+ }
   
   /* Add retro-style icons */
   .social-media-links img {
