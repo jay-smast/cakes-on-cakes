@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery/Cakes on Cakes</title>
+    <link rel="stylesheet" href="/Home/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+</head>
+<header > 
+    <h1>CAKES ON CAKES</h1>
+    <div class="sticky-nav">
+     <nav>
+        <ul>
+          <li><a href="/index.html" >Home</a></li>
+          <li><a href="/Home/about.html">About</a></li>
+          <li><a href="/PricingSheet_Cakesoncakes.jpg" target="_blank">Pricing</a></li>
+          <li><a href="/Home/gallery.html"class="active-link">Gallery</a></li>
+          <li><a href="/Home/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="/images/facebook.png" alt="facebook"></a>
+      <a href="https://www.instagram.com/cakesoncakeschicago/"target="_blank"><img src="/images/instagram.png" alt="instagram"></a>
+  
+    </div>
+  </header>
+<body>
+    <div class="gallery">
+      <div class="row">
+        <div class="column">
+          <img src="/images/confetti.jpg" alt="confetti cake" class="image" onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="column">
+          <img src="/images/lemon.jpg" alt="lemon cake" class="image" onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="column">
+          <img src="/images/smores.jpg" alt="smores cake" class="image" onclick="openModal();currentSlide(3)">
+        </div>
+      </div>
+    </div>
+  
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="mySlides">
+          <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="mySlides">
+          <img src="image3.jpg" alt="Image 3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+  
+    <script src="gallery.js"></script>
+  </body>
+  <footer class="footer" id="footer">
+  
+    <div class="footer-container">
+        <div class="footer-info">
+            <div class="contact-links">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:cakesoncakeschicago@gmail.com">cakesoncakeschicago@gmail.com</a></li>
+                    <!-- <li><a href="tel:+5742385371">Call or Text</a></li> -->
+                    <li><a href="#">East Lakeview, Chicago, IL</a></li>
+                </ul>
+            </div>
+            <div class="social-media-links">
+                <h2>Follow</h2>
+                <ul>
+                    <li><a href="#"><img src="/images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/cakesoncakeschicago/" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <p>&copy; copyright, Jay Mast</p>
+  </footer>
+  </html>
