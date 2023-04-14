@@ -9,7 +9,7 @@
 
 }
 header {
-  margin: 50px 25px 100px;
+  margin: 50px 10px 100px 40px;
 }
 h1 {
   display: inline-block;
@@ -17,10 +17,10 @@ h1 {
   letter-spacing: -1px;
   color: #e11414;
   margin: 0 25px 0 0;
-  font-size: 52px;
+  font-size: 70px;
 }
 .social-icons{
-  float: right;
+  
   margin-top: 5px;
   
 }
@@ -70,7 +70,7 @@ h1 {
     color: #e11414;
     text-align: center;
     text-decoration: none;
-    
+    float: right;
   }
   
   .sticky-nav nav ul li a:hover {
@@ -85,24 +85,89 @@ h1 {
   }
 
 
+  /* home hero */
+
+  .hero-container{
+   position: relative;
+   display: flex;
+   width: 800px;
+   height: auto;
+   margin: 0 auto 150px;
+  }
+ 
+  .hero-image img{
+   
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+    
+  }
+.hero-text-container {
+  position: absolute;
+  z-index: -1;
+  width: 800px;
+  height: 400px;
+  top: 100px;
+  margin: 0 auto;
+  background-color: #fcbecf;
   
+}
+.hero-textbox {
+  position: relative;
+  
+}
+.hero-text {
+  position: absolute;
+  font-size: 32px;
+  width: 300px;
+  height: auto;
+  right: 0;
+  padding: 20px;
+}
+
+
    /* home story */
 .story-container {
-    display: flex;
-    width: 800px;
-    height: auto;
-    margin: 50px auto;
-    background-color: #fcbecf;
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: auto;
+  margin: 0 auto 300px;
     
+  
+}
+.story-container-pink{
+  position: absolute;
+  z-index: -1;
+  width: 800px;
+  height: 400px;
+  top: 75px;
+  margin: 0 auto;
+  background-color: #fcbecf;
+
+}
+.story-textbox {
+  position: relative;
   
 }
 
 .story-text{
+  position: absolute;
+  top: 50px;
    margin: 50px;
-   padding: 10px;
+   
+}
+.story-logo{
+  margin-left: 500px;
+  
 }
 
-/* new */
+.story-logo img {
+
+width: 200px;
+
+}
+
 /* about page */
 
 .about-container {
