@@ -9,44 +9,32 @@
 
 }
 header {
-  margin: 50px 10px 100px 40px;
+  margin: 40px 10px 40px 40px;
 }
 h1 {
   display: inline-block;
+  
+}
+h1 a {
+  text-decoration: none;
+ 
   font-family: Theramy, serif;
   letter-spacing: -1px;
   color: #e11414;
-  margin: 0 25px 0 0;
-  font-size: 70px;
-}
-.social-icons{
   
-  margin-top: 5px;
-  
+  font-size: 60px;
 }
-.social-icons img{
-  display: inline-block;
-  margin-left: 10px;
-  background-color: #fcbecf;
-  width: 20px;
-    height: 20px;
-    padding: 5px;
-    border-radius: 15%;
-    
-}
-.social-icons img:hover{
-  background-color:#e11414;
-  
-  cursor: pointer;
-}
+
 
 
 /* CLEAR NAV WITH BUBBLE HOVER */
 
 .sticky-nav {
   display: inline-block;
-  margin-left: 50px;
-
+  
+  float: right;
+  margin-top: 62px;
+  margin-right: 36px;
   }
   
   /* Style the navigation links */
@@ -60,7 +48,7 @@ h1 {
   
   .sticky-nav nav ul li {
     float: left;
-   padding: 0 6px;
+   padding: 0 4px;
   }
   
   .sticky-nav nav ul li a {
@@ -88,11 +76,14 @@ h1 {
   /* home hero */
 
   .hero-container{
-   position: relative;
-   display: flex;
-   width: 800px;
-   height: auto;
-   margin: 0 auto 150px;
+    
+    width: auto;
+    height: 500px;
+  background-image: url(/images/confetti.jpg);
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 -10px 
   }
  
   .hero-image img{
@@ -102,70 +93,59 @@ h1 {
     margin-left: 50px;
     
   }
-.hero-text-container {
-  position: absolute;
-  z-index: -1;
-  width: 800px;
-  height: 400px;
-  top: 100px;
-  margin: 0 auto;
-  background-color: #fcbecf;
-  
-}
-.hero-textbox {
-  position: relative;
-  
-}
-.hero-text {
-  position: absolute;
-  font-size: 32px;
-  width: 300px;
-  height: auto;
-  right: 0;
-  padding: 20px;
-}
 
 
    /* home story */
-.story-container {
-  position: relative;
+.story-container{
   display: flex;
-  width: 800px;
-  height: auto;
-  margin: 0 auto 300px;
-    
-  
+  justify-content: space-between;
+  margin: 20px;
+  margin-bottom: 150px;
 }
-.story-container-pink{
-  position: absolute;
-  z-index: -1;
-  width: 800px;
-  height: 400px;
-  top: 75px;
-  margin: 0 auto;
-  background-color: #fcbecf;
+.story-textbox{
+  background: 
+  url(/images/stars.svg) no-repeat center left,
+  url(/images/stars-flip.svg) no-repeat top right;
+background-size: 300px, 200px;
+margin: 20px;
 
 }
-.story-textbox {
-  position: relative;
-  
+.story-text h2{
+  font-weight: bold;
+  text-align: center;
+  font-size: 38px;
+  padding: 20px;
 }
-
 .story-text{
-  position: absolute;
-  top: 50px;
-   margin: 50px;
-   
+  margin: 20px;
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 0 30px;
 }
-.story-logo{
-  margin-left: 500px;
-  
+.story-image{
+  margin: 100px 0;
+  width: 330px;
+
+  height: 400px;
+background-image: url(/images/raspberry\ cupcake.jpg);
+background-position: center ;
+background-repeat: no-repeat;
+background-size: cover;
 }
-
-.story-logo img {
-
-width: 200px;
-
+.story-right {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+.story-right button {
+  align-items: center;
+  cursor: pointer;
+  background-color: #fcbecf; 
+  color: black;
+  border: none; 
+  padding: 20px 30px;
+  border-radius: 10px; 
 }
 
 /* about page */
