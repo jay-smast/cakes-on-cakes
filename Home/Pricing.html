@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pricing/Cakes on Cakes</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
-    </head>
-    <header > 
-        <h1><a href="/index.html">CAKES ON CAKES</a></h1>
-        <div class="sticky-nav">
-         <nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing/Cakes on Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+</head>
+<header>
+    <h1><a href="/index.html">CAKES ON CAKES</a></h1>
+    <div class="sticky-nav" id="sticky-nav">
+        <nav>
             <ul>
-              <li><a href="index.html" >Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="/Home/Pricing.html" class="active-link">Pricing</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact</a></li>
+                <li><a href="/Home/about.html">About</a></li>
+                <li><a href="/PricingSheet_Cakesoncakes.jpg" class="active-link">Pricing</a></li>
+                <li><a href="/Home/gallery.html">Gallery</a></li>
             </ul>
-          </nav>
-        </div>
-        <div class="social-icons">
-          <a href="#"><img src="/images/facebook.png" alt="facebook"></a>
-          <a href="#"><img src="/images/instagram.png" alt="instagram"></a>
-      
-        </div>
-      </header>
-<body>
-    
-    <div class="Arch">
-        <div class="arch-logo">
-            <img src="/images/Cakesoncakes_Logo.png" alt="Cakes on cakes logo: glass cloche">
+        </nav>
+        <div class="icon" onclick="toggleMobileMenu(this)">
+            <i class="fa fa-bars"></i>
+
+            <ul class="mobile-menu">
+                <li><a href="/Home/about.html">About</a></li>
+                <li><a href="/PricingSheet_Cakesoncakes.jpg">Pricing</a></li>
+                <li><a href="/Home/gallery.html">Gallery</a></li>
+
+            </ul>
         </div>
     </div>
+</header>
+
+<body>
+
+
     <div class="pink-frame">
         <div class="pricing-guide">
             <table class="table-cake" id="table-cake">
@@ -156,39 +161,42 @@
                     <p>*Pricing depending on decoration request and size</p>
                     <p class="bold">Orders to be picked up in Lakeview area,
                         delivery will be an additional fee.</p>
-                    
+
                 </div>
             </div>
         </div>
     </div>
-    <footer class="footer" id="footer">
- 
-        <div class="footer-container">
-            
-                <div class="contact-links">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li><a href="mailto:cakesoncakeschicago@gmail.com">cakesoncakeschicago@gmail.com</a></li>
-                        <!-- <li><a href="tel:+5742385371">Call or Text</a></li> -->
-                        <li><a href="#">East Lakeview, Chicago, IL</a></li>
-                    </ul>
-                </div>
-                <div class="social-media-links">
-                    <h2>Follow</h2>
-                    <ul>
-                        <li><a href="#"><img src="/images/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="https://www.instagram.com/cakesoncakeschicago/" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a></li>
-                    </ul>
-                </div>
-           <div class="footer-logo">
-              <img src="/images/Cakesoncakes_Logo.png" alt="">
-           </div>
-         
-        </div>
-       <div class="copyright">
-              <p>&copy; 2023, Jay Mast</p>
-          </div>
-      </footer>
 </body>
-</html>
+<footer class="footer" id="footer">
 
+    <div class="footer-container">
+
+        <div class="contact-links">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="mailto:cakesoncakeschicago@gmail.com">cakesoncakeschicago@gmail.com</a></li>
+                <!-- <li><a href="tel:+5742385371">Call or Text</a></li> -->
+                <li><a href="#">East Lakeview, Chicago, IL</a></li>
+            </ul>
+        </div>
+        <div class="social-media-links">
+            <h2>Follow</h2>
+            <ul>
+                <li><a href="#"><img src="/images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/cakesoncakeschicago/" target="_blank"><img
+                            src="/images/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="footer-logo">
+            <img src="/images/Cakesoncakes_Logo.png" alt="">
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023, Jay Mast</p>
+    </div>
+</footer>
+
+<script src="/Home/menu.js"></script>
+
+</html>

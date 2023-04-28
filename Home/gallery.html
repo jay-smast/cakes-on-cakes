@@ -9,22 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
 </head>
-<header > 
+<header>
   <h1><a href="/index.html">CAKES ON CAKES</a></h1>
-    <div class="sticky-nav">
-     <nav>
-        <ul>
-          <li><a href="/Home/about.html">About</a></li>
-          <li><a href="/PricingSheet_Cakesoncakes.jpg" target="_blank">Pricing</a></li>
-          <li><a href="/Home/gallery.html"class="active-link">Gallery</a></li>
-          <li><a href="/Home/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  
-  </header>
+  <div class="sticky-nav" id="sticky-nav">
+    <nav>
+      <ul>
+        <li><a href="/Home/about.html">About</a></li>
+        <li><a href="/PricingSheet_Cakesoncakes.jpg">Pricing</a></li>
+        <li><a href="/Home/gallery.html" class="active-link">Gallery</a></li>
+      </ul>
+    </nav>
+    <div class="icon" onclick="toggleMobileMenu(this)">
+      <i class="fa fa-bars"></i>
+   
+    <ul class="mobile-menu">
+      <li><a href="/Home/about.html">About</a></li>
+      <li><a href="/PricingSheet_Cakesoncakes.jpg">Pricing</a></li>
+      <li><a href="/Home/gallery.html">Gallery</a></li>
+     
+    </ul>
+  </div>
+  </div>
+</header>
 <body>
     <div class="gallery">
       <div class="row">
@@ -87,4 +97,5 @@
           <p>&copy; 2023, Jay Mast</p>
       </div>
   </footer>
+  <script src="/Home/menu.js"></script>
   </html>
