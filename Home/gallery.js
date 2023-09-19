@@ -1,9 +1,9 @@
-// Open the modal
+// Open the carousel
 function openModal() {
     document.getElementById('myModal').style.display = 'block';
   }
   
-  // Close the modal
+  
   function closeModal() {
     document.getElementById('myModal').style.display = 'none';
   }
@@ -23,8 +23,8 @@ function openModal() {
   
   function showSlides(n) {
     const slides = document.getElementsByClassName('mySlides');
-    const dots = document.getElementsByClassName('demo');
-    const captionText = document.getElementById('caption');
+    // const dots = document.getElementsByClassName('dotSpot');
+   
     
     if (n > slides.length) {
       slideIndex = 1;
@@ -37,11 +37,11 @@ function openModal() {
       slides[i].style.display = 'none';
     }
     
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(' active', '');
-    }
+    // for (let i = 0; i < dots.length; i++) {
+    //   dots[i].className = dots[i].className.replace(' active', '');
+    // }
     
     slides[slideIndex - 1].style.display = 'block';
-    dots[slideIndex - 1].className += ' active';
-    captionText.innerHTML = dots[slideIndex - 1].alt;
+    // dots[slideIndex - 1].className += ' active';
+    // captionText.innerHTML = dots[slideIndex - 1].alt;
   }

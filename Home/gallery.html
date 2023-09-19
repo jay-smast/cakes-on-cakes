@@ -13,9 +13,19 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XB1T6R8KQX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XB1T6R8KQX');
+</script>
 <header>
   <h1><a href="/index.html">CAKES ON CAKES</a></h1>
-  <div class="sticky-nav" id="sticky-nav">
+  <div class="nav-menu" id="nav-menu">
     <nav>
       <ul>
         <li><a href="/Home/about.html">About</a></li>
@@ -39,13 +49,28 @@
     <div class="gallery">
       <div class="row">
         <div class="column">
-          <img src="/images/confetti.jpg" alt="confetti cake" class="image" onclick="openModal();currentSlide(1)">
+          <img src="/images/raspberry cupcake.jpg" alt="Raspberry Cupcake" class="image" onclick="openModal();currentSlide(1)">
         </div>
         <div class="column">
-          <img src="/images/lemon.jpg" alt="lemon cake" class="image" onclick="openModal();currentSlide(2)">
+          <img src="/images/lemon cake.jpg" alt="Lemon Raspberry " class="image" onclick="openModal();currentSlide(2)">
         </div>
         <div class="column">
           <img src="/images/smores.jpg" alt="smores cake" class="image" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="column">
+          <img src="/images/raz chocolate.jpg" alt="Raspberry Chocolate" class="image" onclick="openModal();currentSlide(4)">
+        </div>
+        <div class="column">
+          <img src="/images/almond cream.jpg" alt="Almond cake with mousse" class="image" onclick="openModal();currentSlide(5)">
+        </div>
+        <div class="column">
+          <img src="/images/carrot.jpg" alt="Carrot" class="image" onclick="openModal();currentSlide(6)">
+        </div>
+        <div class="column">
+          <img src="/images/cookies and cream.jpg" alt="cookies and cream" class="image" onclick="openModal();currentSlide(7)">
+        </div>
+        <div class="column">
+          <img src="/images/lemon inside.jpg" alt="inside lemon" class="image" onclick="openModal();currentSlide(8)">
         </div>
       </div>
     </div>
@@ -54,13 +79,28 @@
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
         <div class="mySlides">
-          <img src="image1.jpg" alt="Image 1">
+          <img src="/images/raspberry cupcake.jpg" alt="Raspberry Cupcake">
         </div>
         <div class="mySlides">
-          <img src="image2.jpg" alt="Image 2">
+          <img src="/images/lemon cake.jpg" alt="Lemon Raspberry ">
         </div>
         <div class="mySlides">
-          <img src="image3.jpg" alt="Image 3">
+          <img src="/images/smores.jpg" alt="Smores">
+        </div>
+        <div class="mySlides">
+          <img src="/images/raz chocolate.jpg" alt="Raspberry Chocolate">
+        </div>
+        <div class="mySlides">
+          <img src="/images/almond cream.jpg" alt="Almond cake with mousse">
+        </div>
+        <div class="mySlides">
+          <img src="/images/carrot.jpg" alt="Carrot">
+        </div>
+        <div class="mySlides">
+          <img src="/images/cookies and cream.jpg" alt="cookies and cream">
+        </div>
+        <div class="mySlides">
+          <img src="/images/lemon inside.jpg" alt="inside lemon">
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
